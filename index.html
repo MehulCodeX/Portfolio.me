@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehul Rathod | Portfolio</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      border: 1px solid #334155;
+    }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    p.subtitle { color: var(--muted); font-size: 1.1rem; margin-bottom: 1.5rem; }
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-secondary { background: #334155; color: #fff; }
+    .btn-secondary:hover { background: #475569; }
+    .pdf-viewer {
+      background: var(--card);
+      padding: 1rem;
+      border-radius: 12px;
+      border: 1px solid #334155;
+    }
+    iframe {
+      width: 100%;
+      height: 820px;
+      border: none;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+    @media (max-width: 640px) {
+      iframe { height: 500px; }
+      header { padding: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Mehul Rathod</h1>
+      <p class="subtitle">E-Commerce Operations & Performance Marketing</p>
+      <div class="btn-group">
+        <a href="Mehkulkumar%20Rathod_CV.pdf" download class="btn btn-primary">Download CV (PDF)</a>
+        <a href="https://in.linkedin.com/in/mehul-r-rathod-0639a327a" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
+      </div>
+    </header>
+
+    <section class="pdf-viewer">
+      <iframe src="Mehkulkumar%20Rathod_CV.pdf#toolbar=1" title="CV Viewer">
+        <p>Your browser doesn't support embedded PDFs. <a href="Mehkulkumar%20Rathod_CV.pdf" style="color: #38bdf8;">Click here to download the file directly.</a></p>
+      </iframe>
+    </section>
+  </div>
+</body>
+</html>
